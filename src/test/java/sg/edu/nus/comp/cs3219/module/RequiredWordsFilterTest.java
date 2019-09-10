@@ -1,5 +1,8 @@
 package sg.edu.nus.comp.cs3219.module;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,6 +14,13 @@ public class RequiredWordsFilterTest {
 
 	@Test
 	public void test() {
-		// TODO
+			Set<String> ignoreWords = new HashSet<>();
+			ignoreWords.add("is");
+			ignoreWords.add("the");
+			ignoreWords.add("of");
+			ignoreWords.add("and");
+			ignoreWords.add("as");
+			ignoreWords.add("a");
+			ignoreWords.add("after");
 	}
 }
